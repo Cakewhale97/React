@@ -1,0 +1,7 @@
+.Box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100px;
+    height: 100px;
+}

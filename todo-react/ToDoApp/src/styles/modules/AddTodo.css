@@ -1,0 +1,31 @@
+.AddTodo {
+  margin-bottom: 20px;
+}
+
+.Form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+
+  
+}
+
+.Form input {
+  color: black;
+  background-color: wheat;
+  width: 100%;
+  padding: 3%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.Form button {
+  background-color: green;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+

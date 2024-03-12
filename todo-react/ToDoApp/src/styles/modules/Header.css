@@ -1,0 +1,31 @@
+.Header {
+    background-color: green;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        color: wheat;
+  
+    }
+   
+
+}
+
+.Nav {
+    margin-top: 20px;
+}
+
+.Links {
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+
+    a {
+        color: black;
+        list-style: none;
+
+
+    }
+}

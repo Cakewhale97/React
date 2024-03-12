@@ -1,0 +1,45 @@
+.MainHero {
+  height: calc(100vh - 90px); /* Adjust 60px to the height of your header */
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero {
+  h3 {
+    color: #fff1e6;
+    font-weight: 300;
+  }
+}
+
+.HeroMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeroPoster {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+
+.TypeAnimation {
+  color: #f7ede2;
+}
+
+.HeroText h1 {
+  color: #f6bd60;
+}
+
+.HeroText {
+  margin-bottom: 7rem;
+}

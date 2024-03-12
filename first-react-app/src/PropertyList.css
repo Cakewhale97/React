@@ -1,0 +1,19 @@
+.PropertyList {
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  color: white;
+  font-size: 1rem;
+ 
+  
+
+  .PropertyListItems {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+

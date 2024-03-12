@@ -1,0 +1,8 @@
+Components - Combining html and logic into a single reusable component.
+
+JSX - is a syntax extension for Javascript.
+
+- It allows us to write markup that looks like HTML directly inside of ourJS.
+  It's not "legal" JS on its own, so it must be transpiled.
+
+each component gets its own file. Should be named the same as the component.

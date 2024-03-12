@@ -1,0 +1,39 @@
+.City {
+  background: #ececec;
+  width: 341px;
+  display: flex;
+  color: black;
+  display: flex;
+}
+
+.One {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  font-size: 10px;
+  background-color: #E2E2E2;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  h5 {
+    margin-right: 70px;
+  }
+}
+
+.Two {
+  width: 170px;
+  font-size: 10px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+}
+
+h5 {
+  margin: 0;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  padding: 0;
+}

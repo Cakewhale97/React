@@ -1,0 +1,33 @@
+.Searchbar {
+  padding: 2em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+
+  input {
+    text-align: center;
+    width: 70rem;
+    height: 2rem;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+}
+
+.SearchButton {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  font-size: 1rem;
+  z-index: 1;
+  right: 10%;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

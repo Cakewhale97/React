@@ -1,0 +1,7 @@
+.Container {
+  width: 341px;
+  height: 520px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,15 @@
+.Main {
+  margin: 0;
+}
+
+.MainHero {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero {
+  margin: 5%;
+  display: flex;
+}

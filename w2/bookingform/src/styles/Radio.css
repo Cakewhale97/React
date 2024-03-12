@@ -1,0 +1,40 @@
+.Radio {
+  margin-top: 7%;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+
+  p {
+    font-size: 0.5rem;
+  
+  }
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+}
+
+.dot::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+input[type="radio"]:checked + .dot::before {
+  background-color: #4caf50;
+}

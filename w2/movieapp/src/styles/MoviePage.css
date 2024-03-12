@@ -1,0 +1,8 @@
+.MoviePage {
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+
+  flex-direction: column;
+  background: linear-gradient(to bottom, #30343f, #464c5c, #000);
+}
