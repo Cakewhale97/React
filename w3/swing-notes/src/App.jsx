@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FetchNotesButton from "./FetchNotesButton";
 import CreateNoteForm from "./CreateNoteForm";
 import Notes from "./Notes";
 import UpdateNoteForm from "./UpdateNoteForm";
+import DeleteNoteButton from "./DeleteButton";
 
 function App() {
   const [username, setUsername] = useState("");
   const [notes, setNotes] = useState([]);
+
+
 
   return (
     <div>
@@ -16,6 +19,7 @@ function App() {
         <div key={index}>
           <Notes note={note} />
           <UpdateNoteForm note={note} setNotes={setNotes} />
+          <DeleteNoteButton note={note} setNotes={setNotes} />
         </div>
       ))}
     </div>
