@@ -1,0 +1,74 @@
+.Menu {
+    width: 375px;
+    height: 839px;
+    background-color: #f3e4e1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.Header, .CoffeList, .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2F2926;
+    
+}
+
+.Header {
+    width: 80%;
+}
+
+.CoffeList, .Coffes {
+    width: 375px;
+}
+
+.CoffeList {
+    align-items: center;
+}
+
+.Coffes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 474px;
+}
+
+.container {
+    width: 311px;
+    padding: 2%;
+    margin-right: 20px;
+    
+}
+
+
+.AddBtn {
+    display: flex;
+    align-items: center;
+    
+    padding: 1%;
+}
+
+.MenuItems h2, .MenuItems p {
+    margin-top: 4px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.MenuItems h2 {
+    font-size: 20px;
+}
+
+.MenuItems p {
+    font-size: 12px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 15px;
+}
