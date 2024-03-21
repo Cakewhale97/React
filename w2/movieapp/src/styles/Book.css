@@ -1,0 +1,77 @@
+.BookInfo {
+  width: 100vw;
+  height: 100vh;
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.BigBook {
+  display: flex;
+  justify-content: flex-end;
+  width: 389px;
+  height: 464px;
+  border-radius: 2px;
+  background: linear-gradient(0deg, #6fcf97, #6fcf97),
+    linear-gradient(
+      208.29deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0) 92.13%
+    );
+}
+
+.BookDesc {
+  width: 386px;
+  height: 390px;
+  background-color: transparent;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+
+  h1 {
+    font-size: 38px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.line {
+  display: flex;
+  margin-left: 5px;
+  border: 3px solid;
+  margin-right: 5px;
+}
+
+.bookdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 90%;
+
+  h1 {
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-left: 7px;
+  }
+}
+
+.BookDescBox {
+  display: flex;
+  flex-direction: column;
+  width: 386px;
+  height: 78px;
+  background-color: #c4c4c414;
+
+  p {
+    margin-left: 10px;
+    margin-top: 7px;
+  }
+}

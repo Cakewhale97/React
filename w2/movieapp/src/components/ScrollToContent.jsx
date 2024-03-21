@@ -5,7 +5,7 @@ import "../styles/scroll-down-button.css";
 export default function ScrollToContent() {
   const scrollDown = () => {
     window.scrollTo({
-      top: window.innerHeight,
+      top: window.pageYOffset + window.innerHeight,
       behavior: "smooth",
     });
   };

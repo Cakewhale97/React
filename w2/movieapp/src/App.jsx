@@ -9,12 +9,13 @@ import MoviePage from "./components/MoviePage";
 import { Movie } from "@mui/icons-material";
 import MovieFilter from "./components/MovieFilter";
 import "../src/styles/MovieFilter.css";
+import Footer from "./components/Footer";
+import "./styles/Footer.css";
 
 function App() {
   return (
     <div className="App">
       <div className="AppHeader">
-        <Header />
       </div>
 
       <div className="MainHero">
@@ -22,7 +23,7 @@ function App() {
       </div>
       <MoviePage />
 
-      
+      <Footer />
     </div>
   );
 }

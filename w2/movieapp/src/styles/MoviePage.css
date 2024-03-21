@@ -1,6 +1,6 @@
 .MoviePage {
-  height: 100vh;
-  overflow: auto;
+  min-height: 150vh;
+  overflow: scroll;
   display: flex;
 
   flex-direction: column;

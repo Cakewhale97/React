@@ -1,4 +1,6 @@
 import "../styles/Searchbar.css";
+import Button from "@mui/material/Button";
+
 import React, { useState } from "react";
 
 export default function Searchbar({ onSearch }) {
@@ -9,22 +11,25 @@ export default function Searchbar({ onSearch }) {
   };
 
   return (
-    <div className="Searchbar">
-      <input
-        type="text"
-        placeholder="Search for a title"
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        onKeyPress={event => {
-          if (event.key === "Enter") {
-            handleClick();
-          }
-        }}
-      />
-      <button onClick={handleClick} className="SearchButton">
-        Search
-      </button>
-    </div>
+    <>
+      <div className="Searchbar">
+        <input
+          type="text"
+          placeholder="Search for a title"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyPress={(event) => {
+            if (event.key === "Enter") {
+              handleClick();
+            }
+          }}
+        />
+        <Button size="large" variant="contained" onClick={handleClick}>
+          Search
+        </Button>
+      </div>
+      
+    </>
   );
 }
 

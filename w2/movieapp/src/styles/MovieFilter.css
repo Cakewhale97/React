@@ -1,6 +1,5 @@
 .MovieFilter {
   height: calc(100vh - 90px); /* Adjust 60px to the height of your header */
-  overflow: auto;
   background: linear-gradient(to top, #30343f, #464c5c, #000);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   color: white;
