@@ -18,8 +18,20 @@ export default function Hero() {
       <div className="Image"></div>
       <div className="hero-container">
         <div className="hero-Content" onClick={handleClick}>
-          <h1>Coffe so good your taste buds will love it</h1>
-          <p>The best grain, the finest roast, the powerful flavor.</p>
+          <div className="one">
+            <h1>Coffe so good </h1>
+          </div>
+          <div className="two">
+            <h1>The Best Grain</h1>
+          </div>
+          <div className="three">
+            <h1>The finest roast</h1>
+          </div>
+          <div className="four">
+            <h1>The powerful flavor</h1>
+          </div>
+        </div>
+        <div className="Btn">
           <Btn />
         </div>
       </div>

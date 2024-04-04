@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 .nav {
   width: 100vw;
-  background-color: #5c4534;
-
+  /* background-color: #5c4534; */
+  border-bottom: 1px solid white;
 }
 
 .logo {
@@ -24,4 +26,30 @@
   align-items: center;
   margin: 10px;
   width: 100px;
+}
+
+.links {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  color: white;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  margin-right: 50%;
+}
+
+.links .nav-link {
+  color: rgba(255, 255, 255, 0.8); 
+
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: rgba(166, 141, 114, 0.8); 
+  }
+
+  &:active {
+    color: rgba(166, 141, 114, 0.8); 
+  }
 }
