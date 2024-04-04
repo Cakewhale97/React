@@ -1,0 +1,43 @@
+.hero {
+  margin: 0;
+
+  background-color: #a68d72;
+  margin-bottom: 20px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../assets/abdallaa-alebrahim-bXSeymxOQdM-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-Content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: 22px;
+    color: white;
+    margin: 0;
+    margin-bottom: 1%;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 5%;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+.hero-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+

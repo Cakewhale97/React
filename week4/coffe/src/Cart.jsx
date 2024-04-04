@@ -1,7 +1,10 @@
 import "./styles/Cart.css";
+import SendOrder from "./SendOrder";
 import { useSelector } from "react-redux";
 
 export default function Cart() {
+  // Use the useSelector hook to get the cart items from the Redux store
+
   const cartItems = useSelector((state) => state.cart);
 
   return (
@@ -14,6 +17,7 @@ export default function Cart() {
           <p>{item.price}</p>
         </div>
       ))}
+      <SendOrder />
     </div>
   );
 }

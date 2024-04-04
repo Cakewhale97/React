@@ -1,0 +1,28 @@
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--light-background);
+  /* background-color: #F0EDEB; */
+
+  color: var(--light-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Footer {
+  align-self: flex-center;
+}
+
+@media (min-width: 600px) {
+  .menu-items {
+    flex-direction: row;
+  }
+}

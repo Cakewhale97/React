@@ -1,0 +1,47 @@
+import "~@fontsource/roboto";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/400-italic.css"; 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-background: #ffffff;
+  --light-text: #000000;
+
+  --dark-background: #000000;
+  --dark-text: #ffffff;
+}
+
+body {
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* This makes the width of the body 100% of the screen width */
+    width: 100%;
+    /* This makes the height of the body 100% of the screen height */
+    height: 100vh;
+    /* This makes the layout of the body flexible */
+    display: flex;
+    /* This centers the content horizontally */
+    justify-content: center;
+    /* This centers the content vertically */
+    align-items: center;
+    /* This sets the direction of the flex items */
+    flex-direction: column;
+  }
+}
