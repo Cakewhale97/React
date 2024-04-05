@@ -1,7 +1,8 @@
-import "./App.css";
+import "./App.scss";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import AddCard from "./pages/AddCard.jsx";
+import "./creditcardstyles/styles.scss";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <header className="AppHeader">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/add-card" element={<AddCard />}  />
+          <Route path="/addcard" element={<AddCard />}  />
         </Routes>
       </header>
     </div>
