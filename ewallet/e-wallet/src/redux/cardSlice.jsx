@@ -1,8 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-  cards: [],
-  activeCard: {
+const storedCards = JSON.parse(localStorage.getItem("cards")) || [];
+const defaultCard = {
     id: 1,
     cardholder: "",
     cardnumber: "3556 3556 3556 3556",
@@ -10,9 +9,16 @@ const initialState = {
     cvc: "141",
     issuer: "visa",
     active: true,
-  },
-  latestId: 1,
 };
+
+const initialState = {
+    cards: storedCards,
+    activeCard: storedCards.length > 0 ? storedCards[0] : defaultCard,
+    latestId: storedCards.length > 0 ? storedCards[storedCards.length - 1].id : 1,
+};
+  
+// localStorage.clear();
+console.log("initialState", initialState);
 
 const cardSlice = createSlice({
   name: "cards",
@@ -25,13 +31,26 @@ const cardSlice = createSlice({
             state.latestId += 1;
             const newCard = { ...action.payload, id: state.latestId };
 
-            // If there's an activeCard, add it to the cards array
-            if (state.activeCard.id !== 1) {
-                state.cards.push(state.activeCard);
+            // Check if a card with the same details already exists in the state
+            const existingCardIndex = state.cards.findIndex((card) =>
+                card.cardholder === newCard.cardholder &&
+                card.cardnumber === newCard.cardnumber &&
+                card.expiry === newCard.expiry &&
+                card.cvc === newCard.cvc &&
+                card.issuer === newCard.issuer
+            );
+
+            // If the card doesn't exist, add it to the state and set it as the active card
+            if(existingCardIndex === -1) {
+                state.cards.push(newCard);
+                state.activeCard = newCard;
             }
 
-            // Set the activeCard to the new card
-            state.activeCard = newCard;
+            // Update local storage
+            localStorage.setItem(
+                "cards",
+                JSON.stringify([...state.cards])
+            );
         }
     },
     setActiveCard: (state, action) => {
@@ -39,17 +58,17 @@ const cardSlice = createSlice({
         const cardIndex = state.cards.findIndex((card) => card.id === cardId);
 
         if (cardIndex !== -1) {
-            // Store the current activeCard in a temporary variable
-            const previousActiveCard = state.activeCard;
-
             // Set the activeCard to the selected card
             state.activeCard = state.cards[cardIndex];
 
-            // Replace the selected card in the cards array with the previous activeCard
-            state.cards[cardIndex] = previousActiveCard;
+            // Update local storage
+            localStorage.setItem(
+                "cards",
+                JSON.stringify([...state.cards])
+            );
         }
     },
-    },
+  },
 });
 
 export const { addCard, setActiveCard } = cardSlice.actions;

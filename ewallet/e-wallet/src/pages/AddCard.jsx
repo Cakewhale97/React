@@ -52,7 +52,15 @@ export default function AddCard() {
                 id: latestId + 1
              };
      
+             // Dispatching the addCard action to update redux store. 
              dispatch(addCard(newCard));
+
+             // retreiving existing card from local storage or i fail empty array
+             const storedCards = JSON.parse(localStorage.getItem('cards')) || [];
+             // creating an updated card data arry but adding new card to it.
+             const updatedCards = [...storedCards, newCard];
+             // storing the updated card data array in local
+             localStorage.setItem('cards', JSON.stringify(updatedCards));
              redirectPage();
           }
         }
